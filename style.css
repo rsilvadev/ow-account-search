@@ -1,0 +1,26 @@
+html{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: #181818;
+	padding: 0px;
+	margin: 0px;
+}
+
+div{
+	padding: 0px;
+	margin: 0px;
+	background-color: #eeeeee;
+}
+
+p{
+	color: #282828;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 12px;
+	margin: 0px;
+}
