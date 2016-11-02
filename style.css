@@ -21,6 +21,10 @@ body{
 	height: 400px;
 }
 
+#ads p{
+	color: #FFFFFF;
+}
+
 p{
 	color: #282828;
 	font-family: Calibri;
