@@ -15,18 +15,6 @@ body{
 	background-color: #eeeeee;
 }
 
-#ads{
-	background-color: #323232;
-	padding: 4px;
-	margin: 40px auto;
-	width: 800px;
-	height: 800px;
-}
-
-#ads p{
-	color: #FFFFFF;
-}
-
 p{
 	color: #282828;
 	font-family: Calibri;
