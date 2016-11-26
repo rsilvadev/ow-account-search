@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-	<head>
-		<title>Página Pessoal</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta charset="utf-8">
-	</head>
+<head>
+	<title>OW Stats</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<meta charset="utf-8">
+</head>
 
-	<body>
+<body>
 		<div id="header">
-			<p>wallen</p>
+			<img id="logo" src="logo.png">
+			<p>OW STATS</p>
 		</div>
-	</body>
+
+		<div id="content">
+			<center><input id="input" type="text" placeholder="Enter your Battletag"></center>
+
+			<center><form id="form">
+				<input id="eu" type="radio" name="region" value="eu"> Europe<br>
+				<input id="us" type="radio" name="region" value="eu"> United States<br>
+				<input id="kr" type="radio" name="region" value="eu"> Korea<br>
+			</form></center>
+
+			<center><input id="button" type="button" value="Enter" onclick="getinfo()"></center>
+		</div>
+
+		<div id="footer">
+			<p>© OW Stats 2016</p>
+		</div>
+</body>
 </html>

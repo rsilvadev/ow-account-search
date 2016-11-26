@@ -1,26 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Viga');
+
 html{
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 }
 
 body{
 	background-color: #181818;
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
 }
 
 #header{
-	padding: 0px;
-	margin: 0px;
 	background-color: #eeeeee;
-}
-
-p{
-	color: #282828;
-	font-family: Calibri;
+	color: #484848;
 	font-size: 18px;
+	font-family: 'Viga';
 	font-weight: bold;
 	text-align: center;
-	padding: 12px;
 	margin: 0px;
+	padding: 4px;
+}
+
+#logo{
+	width: 40px;
+	margin: 18px 0px 0px 4px;
+}
+
+#content{
+	width: 400px;
+	color: #484848;
+	font-size: 14px;
+	font-family: 'Viga';
+	border-radius: 4px;
+	margin: 180px auto 0px auto;
+	padding: 0px;
+}
+
+#content #input{
+	background-color: #484848;
+	color: #eeeeee;
+	font-size: 18px;
+	font-family: 'Calibri';
+	padding: 10px;
+  	border: none;
+  	border-bottom: solid 2px #aaaaaa;
+  	transition: border 0.3s;
+}
+
+#content #input:focus{
+	border-bottom: solid 2px #686868;
+}
+
+#content #form{
+	color: #686868;
+	margin: 18px;
+}
+
+#content #button{
+	background-color: #FFC000;
+	font-size: 18px;
+	font-family: 'Viga';
+	padding: 8px;
+  	border: none;
+  	border-bottom: solid 2px #484848;
+  	transition: border 0.3s;
+  	cursor: pointer;
+}
+
+#content #button:hover{
+	background-color: #F0B400;
+}
+
+#footer{
+	color: #686868;
+	font-size: 16px;
+	font-family: 'Viga';
+	text-align: center;
+	margin: 4px 0px;
+	padding: 0px;
 }
