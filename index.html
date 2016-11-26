@@ -8,25 +8,36 @@
 </head>
 
 <body>
-		<div id="header">
-			<img id="logo" src="logo.png">
-			<p>OW STATS</p>
-		</div>
+	<div id="header">
+		<img id="logo" src="logo.png">
+		<p>OW STATS</p>
+	</div>
 
-		<div id="content">
-			<center><input id="input" type="text" placeholder="Enter your Battletag"></center>
+	<div id="content">
+		<center><input id="input" type="text" placeholder="Enter your Battletag"></center>
 
-			<center><form id="form">
-				<input id="eu" type="radio" name="region" value="eu"> Europe<br>
-				<input id="us" type="radio" name="region" value="eu"> United States<br>
-				<input id="kr" type="radio" name="region" value="eu"> Korea<br>
-			</form></center>
+		<center><form id="form">
+			<input id="eu" type="radio" name="region" value="eu"> Europe<br>
+			<input id="us" type="radio" name="region" value="us"> United States<br>
+			<input id="kr" type="radio" name="region" value="kr"> Korea<br>
+			<input id="ch" type="radio" name="region" value="ch"> China<br>
+		</form></center>
 
-			<center><input id="button" type="button" value="Enter" onclick="getinfo()"></center>
-		</div>
+		<center><input id="button" type="button" value="Enter" onclick="profile()"></center>
 
-		<div id="footer">
-			<p>© OW Stats 2016</p>
-		</div>
+		<table id="profile" ng-view>
+			<tr id="info">
+				<td id="image"></td>
+				<td id="name"></td>
+				<td id="btnumber"></td>
+				<td id="rankimg"></td>
+				<td id="rank"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="footer">
+		<p>© OW Stats 2016</p>
+	</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-function getinfo(){
+function profile(){
 	var name;
 	var region;
 	var url;
@@ -12,15 +12,22 @@ function getinfo(){
 	else if(document.getElementById("us").checked){
 		region = document.getElementById("us").value;
 	}
-	else{
+	else if(document.getElementById("kr")){
 		region = document.getElementById("kr").value;
+	}
+	else{
+		region = document.getElementById("ch").value;
 	}
 
 	url = "https://api.lootbox.eu/pc/" + region + "/" + name + "/profile";
 
 	response = request(url);
 
-	document.getElementById("footer").innerHTML = response;
+	document.getElementById("image").style.backgroundImage = "url(" + response.data.avatar + ")";
+	document.getElementById("name").innerHTML = response.data.username;
+	document.getElementById("btnumber").innerHTML = "#" + name.match(/\d+/);
+	document.getElementById("rankimg").style.backgroundImage = "url(" + response.data.competitive.rank_img + ")";
+	document.getElementById("rank").innerHTML = response.data.competitive.rank;
 }
 
 function request(url){
@@ -39,5 +46,5 @@ function request(url){
 		}
 	}
 
-	return obj.data.username;
+	return obj;
 }

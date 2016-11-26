@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Viga');
 
 html{
@@ -29,7 +28,6 @@ body{
 }
 
 #content{
-	width: 400px;
 	color: #484848;
 	font-size: 14px;
 	font-family: 'Viga';
@@ -71,6 +69,39 @@ body{
 
 #content #button:hover{
 	background-color: #F0B400;
+}
+
+#profile{
+	color: #686868;
+	margin: 48px auto;
+	padding: 0px;
+}
+
+#profile #info{
+	height: 64px;
+}
+
+#profile #image{
+	background-size: 100%;
+	width: 64px;
+}
+
+#profile #name{
+	font-size: 40px;
+}
+
+#profile #btnumber{
+	color: #404040;
+	font-size: 18px;
+}
+
+#profile #rankimg{
+	background-size: 100%;
+	width: 64px;
+}
+
+#profile #rank{
+	font-size: 18px;
 }
 
 #footer{
